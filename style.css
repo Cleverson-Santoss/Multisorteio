@@ -1,0 +1,48 @@
+
+.cabecalho {
+    text-align: center;
+}
+
+.imagem_logo {
+    display: inline-block;
+    width: 10%;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.titulo_principal {
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+.opcao_menu{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.menu_opcao_equipe {
+    font-size: 22px;
+    color: orangered;
+    background-color: black;
+    width: 50%;
+    height: 50px;   
+}
+
+.area_texto_geral {
+    display: flex;
+    justify-content: center;
+}
+
+.area_texto {
+    padding: 10px;
+    width: 50%;
+    height: 350px;
+    font-size: 22px;
+    
+}
+
+.area_texto::placeholder {
+    text-align: left;
+    display: block;
+}
