@@ -39,10 +39,42 @@
     width: 50%;
     height: 350px;
     font-size: 22px;
-    
 }
 
 .area_texto::placeholder {
     text-align: left;
     display: block;
+}
+
+.botao_enviar {
+    display: flex;
+    justify-content: space-around;
+}
+
+.botao_de_envio {
+    width: 10%;
+    height: 25px;
+    background-color: black;
+    color: orangered;
+    border: 0;
+}
+
+.equipes {
+    margin-top: 30px;
+    margin-left: 25%;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.equipe_um {
+    padding: 20px 100px;
+    background-color: black;
+    color: orangered;
+}
+
+.equipe_dois {
+    padding: 20px 100px;
+    background-color: black;
+    color: orangered;
 }
