@@ -22,8 +22,25 @@ botaoEnviar.addEventListener('click', () => {
         return indiceSorteado;
     }
 
+    //Função para criar um h2 para cada item do array das equipes sorteadas
+    function mostraEquipe(equipe, containerId){
+        //Selecionando onde vai inserir os h2
+        const equipeGeral = document.getElementById(containerId);
+        
+        //Percorre/ itera por cada item do array
+        equipe.forEach(item => {
+
+            // Cria um novo elemento <h2>
+            const h2 = document.createElement("h2");
+
+            h2.textContent = item;
+
+            equipeGeral.appendChild(h2);
+        })
+    }
+
     // Realiza uma repetição até que o tamanho da equipeUmm seja maior qque a metade do tamanho da listaDeNomes
-    while(equipeUm.length < (listaDeNomes.length / 2)){
+    while(equipeUm.length < Math.floor(listaDeNomes.length / 2)){
         // Guarda o valor do indice sorteado para utilizar como um verificador depois
         let nomeSorteado = listaDeNomes[sortearIndice()];
         let nomeJaExiste = false;
@@ -50,8 +67,9 @@ botaoEnviar.addEventListener('click', () => {
             }
         }
 
-        console.log(`Equipe 1: ${equipeUm}`);
-        console.log(`Equipe 2: ${equipeDois}`);
+        //console.log(`Equipe 1: ${equipeUm}`);
+        mostraEquipe(equipeUm, 'equipe_um');
+        mostraEquipe(equipeDois, 'equipe_dois');
 });
 
 
